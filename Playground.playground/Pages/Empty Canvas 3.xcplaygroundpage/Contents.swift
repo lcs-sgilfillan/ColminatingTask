@@ -39,11 +39,11 @@ PlaygroundPage.current.liveView = canvas
 // Replace this comment with your first comment – what is the goal of the code you're about to write?
 func drawTessa() {
     
-    turtle.penUp()
+  // turtle.penUp()
     //starting postion
     turtle.forward(steps: 1 * squareSize)
     
-turtle.drawSelf()
+//turtle.drawSelf()
     //begining
     turtle.left(by: 90)
     //    turtle.drawSelf()
@@ -126,7 +126,7 @@ turtle.drawSelf()
 
 func moveUpToSecondStarting() {
     
-    turtle.penUp()
+   // turtle.penUp()
     
     turtle.right(by: 180)
 //    turtle.drawSelf()
@@ -156,7 +156,7 @@ func drawRow() {
     // Draw a row
     for _ in 1...3 {
         drawTessa()
-        turtle.penUp()
+       // turtle.penUp()
         turtle.forward(steps: 19 * squareSize)
         
     }
