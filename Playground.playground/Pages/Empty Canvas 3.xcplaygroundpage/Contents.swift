@@ -1,6 +1,6 @@
 //: [Previous](@previous) / [Next](@next)
 /*:
-## Canvas size
+ ## Canvas size
  
  Set the size of your desired canvas by adjusting the constants on lines 19 and 20.
  */
@@ -33,7 +33,7 @@ PlaygroundPage.current.liveView = canvas
  You can remove the code on line 49 and begin writing your own code.
  
  [Documentation](http://russellgordon.ca/CanvasGraphics/Documentation/) is available.
-
+ 
  */
 
 // Replace this comment with your first comment – what is the goal of the code you're about to write?
@@ -42,133 +42,135 @@ func drawTessa() {
     turtle.penUp()
     //starting postion
     turtle.forward(steps: 1 * squareSize)
-    turtle.drawSelf()
+    
+turtle.drawSelf()
     //begining
     turtle.left(by: 90)
-//    turtle.drawSelf()
+    //    turtle.drawSelf()
     
     turtle.forward(steps: 4 * squareSize)
-//    turtle.drawSelf()
+    //    turtle.drawSelf()
     
     turtle.right(by: 90)
-//    turtle.drawSelf()
+    //    turtle.drawSelf()
     
     turtle.forward(steps: 4 * squareSize)
-//    turtle.drawSelf()
+    //    turtle.drawSelf()
     
     turtle.left(by: 90)
-//    turtle.drawSelf()
+    //    turtle.drawSelf()
     
     turtle.forward(steps: 4 * squareSize)
-//    turtle.drawSelf()
+    //    turtle.drawSelf()
     
     turtle.right(by: 90)
-//    turtle.drawSelf()
+    //    turtle.drawSelf()
     
     turtle.forward(steps: 4 * squareSize)
-//    turtle.drawSelf()
+    //    turtle.drawSelf()
     
     turtle.left(by: 90)
-//    turtle.drawSelf()
+    //    turtle.drawSelf()
     
     turtle.forward(steps: 4 * squareSize)
-//    turtle.drawSelf()
+    //    turtle.drawSelf()
     
     turtle.right(by: 90)
-//    turtle.drawSelf()
+    //    turtle.drawSelf()
     
     turtle.forward(steps: 4 * squareSize)
-//    turtle.drawSelf()
+    //    turtle.drawSelf()
     
     turtle.right(by: 90)
-//    turtle.drawSelf()
+    //    turtle.drawSelf()
     
     turtle.forward(steps: 4 * squareSize)
-//    turtle.drawSelf()
+    //    turtle.drawSelf()
     
     turtle.left(by: 90)
-//    turtle.drawSelf()
+    //    turtle.drawSelf()
     
     turtle.forward(steps: 4 * squareSize)
-//    turtle.drawSelf()
-   
+    //    turtle.drawSelf()
+    
     turtle.right(by: 90)
-//    turtle.drawSelf()
+    //    turtle.drawSelf()
     
     turtle.forward(steps: 4 * squareSize)
-//    turtle.drawSelf()
+    //    turtle.drawSelf()
     
     turtle.left(by: 90)
-//    turtle.drawSelf()
+    //    turtle.drawSelf()
     
     turtle.forward(steps: 4 * squareSize)
-//    turtle.drawSelf()
+    //    turtle.drawSelf()
     
     turtle.right(by: 90)
-//    turtle.drawSelf()
+    //    turtle.drawSelf()
     
     turtle.forward(steps: 4 * squareSize)
-//    turtle.drawSelf()
+    //    turtle.drawSelf()
     
     turtle.right(by: 90)
-//    turtle.drawSelf()
+    //    turtle.drawSelf()
     
     turtle.forward(steps: 20 * squareSize)
-//    turtle.drawSelf()
+    //    turtle.drawSelf()
     
     turtle.right(by: 180)
-    turtle.drawSelf()
-   
-    turtle.drawSelf()
+   // turtle.drawSelf()
+    
+    //turtle.drawSelf()
     turtle.penDown()
 }
 
-let squareSize = 10
-
-for _ in 1...3 {
-
-
-drawTessa()
-turtle.penUp()
-turtle.forward(steps: 19 * squareSize)
-
-}
-
-func MoveUpToSecondStarting() {
+func moveUpToSecondStarting() {
     
     turtle.penUp()
     
     turtle.right(by: 180)
-    turtle.drawSelf()
+//    turtle.drawSelf()
     
     turtle.right(by: 90)
-    turtle.drawSelf()
+//    turtle.drawSelf()
     
     turtle.left(by: 90)
-    turtle.drawSelf()
+//    turtle.drawSelf()
     
     turtle.forward(steps: 60 * squareSize)
-    turtle.drawSelf()
+//    turtle.drawSelf()
     
     turtle.right(by: 90)
-    turtle.drawSelf()
+//    turtle.drawSelf()
     
     turtle.forward(steps: 12 * squareSize)
-    turtle.drawSelf()
+//    turtle.drawSelf()
     
     turtle.right(by: 90)
-    turtle.drawSelf()
+//    turtle.drawSelf()
     
     turtle.penDown()
 }
 
+func drawRow() {
+    // Draw a row
+    for _ in 1...3 {
+        drawTessa()
+        turtle.penUp()
+        turtle.forward(steps: 19 * squareSize)
+        
+    }
+
+}
 
 
-MoveUpToSecondStarting()
-drawTessa()
-turtle.penUp()
+// MARK: Begin actual sketch where we *use* the functions
+let squareSize = 10
 
-
+for _ in 1...5 {
+    drawRow()
+    moveUpToSecondStarting()
+}
 
 
 /*:
@@ -178,7 +180,7 @@ turtle.penUp()
  Remember to show the Live View (1 then 2):
  
  ![timeline](timeline.png "Timeline")
-
+ 
  ## Use source control
  To keep your work organized, receive feedback, and earn a high grade in this course, regular use of source control is a must.
  
