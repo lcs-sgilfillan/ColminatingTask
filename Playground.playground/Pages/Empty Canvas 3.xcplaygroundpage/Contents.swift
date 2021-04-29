@@ -37,7 +37,139 @@ PlaygroundPage.current.liveView = canvas
  */
 
 // Replace this comment with your first comment – what is the goal of the code you're about to write?
-canvas.drawRectangle(at: Point(x: 50, y: 75), width: 100, height: 200)
+func drawTessa() {
+    
+    turtle.penUp()
+    //starting postion
+    turtle.forward(steps: 1 * squareSize)
+    turtle.drawSelf()
+    //begining
+    turtle.left(by: 90)
+//    turtle.drawSelf()
+    
+    turtle.forward(steps: 4 * squareSize)
+//    turtle.drawSelf()
+    
+    turtle.right(by: 90)
+//    turtle.drawSelf()
+    
+    turtle.forward(steps: 4 * squareSize)
+//    turtle.drawSelf()
+    
+    turtle.left(by: 90)
+//    turtle.drawSelf()
+    
+    turtle.forward(steps: 4 * squareSize)
+//    turtle.drawSelf()
+    
+    turtle.right(by: 90)
+//    turtle.drawSelf()
+    
+    turtle.forward(steps: 4 * squareSize)
+//    turtle.drawSelf()
+    
+    turtle.left(by: 90)
+//    turtle.drawSelf()
+    
+    turtle.forward(steps: 4 * squareSize)
+//    turtle.drawSelf()
+    
+    turtle.right(by: 90)
+//    turtle.drawSelf()
+    
+    turtle.forward(steps: 4 * squareSize)
+//    turtle.drawSelf()
+    
+    turtle.right(by: 90)
+//    turtle.drawSelf()
+    
+    turtle.forward(steps: 4 * squareSize)
+//    turtle.drawSelf()
+    
+    turtle.left(by: 90)
+//    turtle.drawSelf()
+    
+    turtle.forward(steps: 4 * squareSize)
+//    turtle.drawSelf()
+   
+    turtle.right(by: 90)
+//    turtle.drawSelf()
+    
+    turtle.forward(steps: 4 * squareSize)
+//    turtle.drawSelf()
+    
+    turtle.left(by: 90)
+//    turtle.drawSelf()
+    
+    turtle.forward(steps: 4 * squareSize)
+//    turtle.drawSelf()
+    
+    turtle.right(by: 90)
+//    turtle.drawSelf()
+    
+    turtle.forward(steps: 4 * squareSize)
+//    turtle.drawSelf()
+    
+    turtle.right(by: 90)
+//    turtle.drawSelf()
+    
+    turtle.forward(steps: 20 * squareSize)
+//    turtle.drawSelf()
+    
+    turtle.right(by: 180)
+    turtle.drawSelf()
+   
+    turtle.drawSelf()
+    turtle.penDown()
+}
+
+let squareSize = 10
+
+for _ in 1...3 {
+
+
+drawTessa()
+turtle.penUp()
+turtle.forward(steps: 19 * squareSize)
+
+}
+
+func MoveUpToSecondStarting() {
+    
+    turtle.penUp()
+    
+    turtle.right(by: 180)
+    turtle.drawSelf()
+    
+    turtle.right(by: 90)
+    turtle.drawSelf()
+    
+    turtle.left(by: 90)
+    turtle.drawSelf()
+    
+    turtle.forward(steps: 60 * squareSize)
+    turtle.drawSelf()
+    
+    turtle.right(by: 90)
+    turtle.drawSelf()
+    
+    turtle.forward(steps: 12 * squareSize)
+    turtle.drawSelf()
+    
+    turtle.right(by: 90)
+    turtle.drawSelf()
+    
+    turtle.penDown()
+}
+
+
+
+MoveUpToSecondStarting()
+drawTessa()
+turtle.penUp()
+
+
+
 
 /*:
  ## Show the Live View
@@ -54,3 +186,4 @@ canvas.drawRectangle(at: Point(x: 50, y: 75), width: 100, height: 200)
  
  ![source_control](source-control.png "Source Control")
  */
+
